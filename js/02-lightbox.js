@@ -16,16 +16,16 @@ const markup = galleryItems.map(({preview, original, description}) => `
 </li>`).join('');
 galleryList.insertAdjacentHTML('beforeend', markup);
 
-galleryList.addEventListener('click', handlerOpenModal);
+// galleryList.addEventListener('click', handlerOpenModal);
 
 
-function handlerOpenModal(evt) {
-    evt.preventDefault();
-    // console.log('target', evt.target)
-    if (evt.target.classList.contains('gallery__item')){
-        return;
+// function handlerOpenModal(evt) {
+//     evt.preventDefault();
+//     // console.log('target', evt.target)
+//     if (evt.target.classList.contains('gallery__item')){
+//         return;
         
-    }
+//     }
     
    
     const lightbox = new SimpleLightbox('.gallery a', { 
@@ -38,7 +38,7 @@ function handlerOpenModal(evt) {
     lightbox.open();
     
     
-}
+
 
 
 

@@ -35,7 +35,7 @@ galleryList.insertAdjacentHTML('beforeend', markup);
         captionsData: 'alt',
 
       });
-    lightbox.open();
+    
     
     
 
